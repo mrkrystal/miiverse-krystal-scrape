@@ -1,0 +1,15 @@
+{
+  "name": "miiversekrystalscrape",
+  "version": "1.0.0",
+  "description": "Attempt to scrape web resources from Miiverse about Krystal in an automated way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mr. Krystal",
+  "license": "MIT",
+  "devDependencies": {
+    "lodash": "^4.17.4",
+    "website-scraper": "^3.3.0"
+  }
+}
