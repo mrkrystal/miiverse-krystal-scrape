@@ -11,6 +11,9 @@ const scrapeOptions = {
     urls: urls,
     filenameGenerator: 'bySiteStructure',
     directory: './out',
+
+    // Be nice, only download 5 pages at once
+    requestConcurrency: 5,
 };
 
 scrape(scrapeOptions, (error, result) => {
