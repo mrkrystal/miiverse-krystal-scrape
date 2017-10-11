@@ -24,6 +24,7 @@
             'color: #fff',
             'font-size: 20px',
             'padding: 8px 32px',
+            'pointer-events: auto',
         ].join(';');
 
         button.className = 'KrystalArchiveButton';
@@ -45,6 +46,9 @@
 
         e.target.parentNode.removeChild(e.target);
     });
+
+    // Prevent clicks on posts, to prevent accidental redirects
+    document.querySelector('.post-list').style['pointer-events'] = 'none';
 
     // Output data to console
     window.outputData = () => {
