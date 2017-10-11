@@ -16,3 +16,21 @@ _.uniq(allTogether).length
 
 // Strip out other links that already exist among the other artists
 _.difference(data.other, _.flatten(_.values(_.omit(data, 'other'))));
+
+
+
+// All of them
+var allPosts = _.flatten(_.values(data));
+
+
+
+// Actual duplicates
+_.keys(_.pickBy(_.countBy(_.flatten(_.values(data))), (v) => {
+    return v > 1;
+}));
+
+
+
+_.keys(_.pickBy(_.countBy(_.flatten(allPosts, newBatch)), (v) => {
+    return v > 1;
+}));
