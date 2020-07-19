@@ -9,7 +9,7 @@
   "author": "Mr. Krystal",
   "license": "MIT",
   "devDependencies": {
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "website-scraper": "^3.3.0"
   }
 }
